@@ -103,8 +103,8 @@
     color: #5C5C5C;
 }
 
-/* Spell header */
-.sheet-rolltemplate-DccTabbed .sheet-RollTemp-header.sheet-spell{
+/* Artifact header */
+.sheet-rolltemplate-DccTabbed .sheet-RollTemp-header.sheet-artifact{
     color: #540B7F;
 }
 
@@ -511,7 +511,7 @@ label div
 .charsheet input.sheet-tab2:checked ~ div.sheet-section-background,
 .charsheet input.sheet-tab3:checked ~ div.sheet-section-class,
 .charsheet input.sheet-tab4:checked ~ div.sheet-section-weapons,
-.charsheet input.sheet-tab5:checked ~ div.sheet-section-spellbook,
+.charsheet input.sheet-tab5:checked ~ div.sheet-section-artifactbook,
 .charsheet input.sheet-tab6:checked ~ div.sheet-section-armor,
 .charsheet input.sheet-tab7:checked ~ div.sheet-section-inventory {
 	max-height: 999999px;
@@ -689,47 +689,47 @@ label div
 
 /* END Inspiration button Settings */
 
-/* Spell Page Settings */
-.charsheet div[class^="sheet-spell-page"] { 	
+/* Artifact Page Settings */
+.charsheet div[class^="sheet-artifact-page"] { 	
 	visibility: hidden;
 	opacity: 0;
 	max-height:0;
 	overflow: hidden;
 }
 
-.charsheet input.sheet-spelltab0:checked ~ div.sheet-spell-page0,
-.charsheet input.sheet-spelltab1:checked ~ div.sheet-spell-page1,
-.charsheet input.sheet-spelltab2:checked ~ div.sheet-spell-page2,
-.charsheet input.sheet-spelltab3:checked ~ div.sheet-spell-page3,
-.charsheet input.sheet-spelltab4:checked ~ div.sheet-spell-page4,
-.charsheet input.sheet-spelltab5:checked ~ div.sheet-spell-page5 {
+.charsheet input.sheet-artifacttab0:checked ~ div.sheet-artifact-page0,
+.charsheet input.sheet-artifacttab1:checked ~ div.sheet-artifact-page1,
+.charsheet input.sheet-artifacttab2:checked ~ div.sheet-artifact-page2,
+.charsheet input.sheet-artifacttab3:checked ~ div.sheet-artifact-page3,
+.charsheet input.sheet-artifacttab4:checked ~ div.sheet-artifact-page4,
+.charsheet input.sheet-artifacttab5:checked ~ div.sheet-artifact-page5 {
 	max-height: 999999px;
 	visibility: visible;
 	opacity: 1;
 	transition: opacity 0.5s linear 0s;
 }
 
-.charsheet input.sheet-spelltab99:checked ~ div[class^="sheet-spell-page"] { 	
+.charsheet input.sheet-artifacttab99:checked ~ div[class^="sheet-artifact-page"] { 	
 	max-height: 999999px;
 	visibility: visible;
 	opacity: 1;
 	transition: opacity 0.5s linear 0s;
 }
 
-.charsheet input.sheet-spelltab0:checked ~ span.sheet-spelltab0,
-.charsheet input.sheet-spelltab1:checked ~ span.sheet-spelltab1,
-.charsheet input.sheet-spelltab2:checked ~ span.sheet-spelltab2,
-.charsheet input.sheet-spelltab3:checked ~ span.sheet-spelltab3,
-.charsheet input.sheet-spelltab4:checked ~ span.sheet-spelltab4,
-.charsheet input.sheet-spelltab5:checked ~ span.sheet-spelltab5,
-.charsheet input.sheet-spelltab99:checked ~ span.sheet-spelltab99
+.charsheet input.sheet-artifacttab0:checked ~ span.sheet-artifacttab0,
+.charsheet input.sheet-artifacttab1:checked ~ span.sheet-artifacttab1,
+.charsheet input.sheet-artifacttab2:checked ~ span.sheet-artifacttab2,
+.charsheet input.sheet-artifacttab3:checked ~ span.sheet-artifacttab3,
+.charsheet input.sheet-artifacttab4:checked ~ span.sheet-artifacttab4,
+.charsheet input.sheet-artifacttab5:checked ~ span.sheet-artifacttab5,
+.charsheet input.sheet-artifacttab99:checked ~ span.sheet-artifacttab99
  {
     background: rgb(0,158,115);    
     color: white;
 	border-radius: 4px;
 }
 
-.charsheet input.sheet-spellpagetab {
+.charsheet input.sheet-artifactpagetab {
     width: 70px;
     height: 20px;
     cursor: pointer;
@@ -738,7 +738,7 @@ label div
     z-index: 9999;
 }
 
-.charsheet span.sheet-spellpagetab {
+.charsheet span.sheet-artifactpagetab {
     text-align: center;
     display: inline-block;    
     font-size: 13px;
@@ -753,11 +753,11 @@ label div
 	position: relative;
 	margin-left: -73px;
 }
-/* END Spell Page Settings */
+/* END Artifact Page Settings */
 
-/* Borders for spell page and class action repeating section rows */
-div[data-groupname^="repeating_spellbook"] .repitem,
-div[data-groupname^="repeating_divinespellbook"] .repitem,
+/* Borders for artifact page and class action repeating section rows */
+div[data-groupname^="repeating_artifactbook"] .repitem,
+div[data-groupname^="repeating_paracausalartifactbook"] .repitem,
 div[data-groupname^="repeating_mutations"] .repitem,
 .sheet-zero-row {
     border: 1px solid #000000;
@@ -859,50 +859,50 @@ div[data-groupname^="repeating_mutations"] .repitem,
   transition: opacity 0.5s linear 0s;
 }
 
-/* spell type tab Settings */
+/* artifact type tab Settings */
 
-.charsheet div[class^="sheet-spell-type"] { 	
+.charsheet div[class^="sheet-artifact-type"] { 	
 	visibility: hidden;
 	opacity: 0;
 	max-height:0;
 	overflow: hidden;
 }
 
-.charsheet input.sheet-spelltypeManifestation:checked ~ div.sheet-spell-type-Manifestation,
-.charsheet input.sheet-spelltypeMercurialMagic:checked ~ div.sheet-spell-type-MercurialMagic,
-/*.charsheet input.sheet-spelltypeCorruption:checked ~ div.sheet-spell-type-Corruption,*/
-.charsheet input.sheet-spelltypeDescription:checked ~ div.sheet-spell-type-Description {
+.charsheet input.sheet-artifacttypeManifestation:checked ~ div.sheet-artifact-type-Manifestation,
+.charsheet input.sheet-artifacttypeMercurialMagic:checked ~ div.sheet-artifact-type-MercurialMagic,
+/*.charsheet input.sheet-artifacttypeCorruption:checked ~ div.sheet-artifact-type-Corruption,*/
+.charsheet input.sheet-artifacttypeDescription:checked ~ div.sheet-artifact-type-Description {
 	max-height: 999999px;
 	visibility: visible;
 	opacity: 1;
 	transition: opacity 0.5s linear 0s;
 }
 
-.charsheet input.sheet-spelltypeManifestation:checked ~ span.sheet-spelltypeManifestation,
-.charsheet input.sheet-spelltypeMercurialMagic:checked ~ span.sheet-spelltypeMercurialMagic,
-/*.charsheet input.sheet-spelltypeCorruption:checked ~ span.sheet-spelltypeCorruption,*/
-.charsheet input.sheet-spelltypeDescription:checked ~ span.sheet-spelltypeDescription {
+.charsheet input.sheet-artifacttypeManifestation:checked ~ span.sheet-artifacttypeManifestation,
+.charsheet input.sheet-artifacttypeMercurialMagic:checked ~ span.sheet-artifacttypeMercurialMagic,
+/*.charsheet input.sheet-artifacttypeCorruption:checked ~ span.sheet-artifacttypeCorruption,*/
+.charsheet input.sheet-artifacttypeDescription:checked ~ span.sheet-artifacttypeDescription {
     background: #879a6a;     
     color: white;
 	border-radius: 4px;
 }
 
-.charsheet input.sheet-spelltypeGeneralDoctor:checked ~ div.sheet-spell-type-GeneralDoctor,
-.charsheet input.sheet-spelltypeManifestDoctor:checked ~ div.sheet-spell-type-ManifestDoctor {
+.charsheet input.sheet-artifacttypeGeneralDoctor:checked ~ div.sheet-artifact-type-GeneralDoctor,
+.charsheet input.sheet-artifacttypeManifestDoctor:checked ~ div.sheet-artifact-type-ManifestDoctor {
     max-height: 999999px;
     visibility: visible;
     opacity: 1;
     transition: opacity 0.5s linear 0s;
 }
 
-.charsheet input.sheet-spelltypeGeneralDoctor:checked ~ span.sheet-spelltypeGeneralDoctor,
-.charsheet input.sheet-spelltypeManifestDoctor:checked ~ span.sheet-spelltypeManifestDoctor {
+.charsheet input.sheet-artifacttypeGeneralDoctor:checked ~ span.sheet-artifacttypeGeneralDoctor,
+.charsheet input.sheet-artifacttypeManifestDoctor:checked ~ span.sheet-artifacttypeManifestDoctor {
     background: #879a6a;     
     color: white;
     border-radius: 4px;
 }
 
-.charsheet input.sheet-spelltypetab {
+.charsheet input.sheet-artifacttypetab {
     width: 100px;
     height: 20px;
     cursor: pointer;
@@ -911,7 +911,7 @@ div[data-groupname^="repeating_mutations"] .repitem,
     z-index: 999;
 }
 
-.charsheet span.sheet-spelltypetab {
+.charsheet span.sheet-artifacttypetab {
     text-align: center;
     display: inline-block;    
     font-size: 12px;
@@ -927,13 +927,13 @@ div[data-groupname^="repeating_mutations"] .repitem,
 	margin-left: -100px;
 }
 
-/* END spell type tab Settings */
+/* END artifact type tab Settings */
 
 /* Mutation tab Settings */
-.charsheet input.sheet-subMutation1:checked ~ div.sheet-spell-type-subMutation1,
-.charsheet input.sheet-subMutation2:checked ~ div.sheet-spell-type-subMutation2,
-.charsheet input.sheet-subMutation3:checked ~ div.sheet-spell-type-subMutation3,
-.charsheet input.sheet-subMutation4:checked ~ div.sheet-spell-type-subMutation4 {
+.charsheet input.sheet-subMutation1:checked ~ div.sheet-artifact-type-subMutation1,
+.charsheet input.sheet-subMutation2:checked ~ div.sheet-artifact-type-subMutation2,
+.charsheet input.sheet-subMutation3:checked ~ div.sheet-artifact-type-subMutation3,
+.charsheet input.sheet-subMutation4:checked ~ div.sheet-artifact-type-subMutation4 {
 	max-height: 999999px;
 	visibility: visible;
 	opacity: 1;
@@ -1045,7 +1045,7 @@ div[data-groupname^="repeating_mutations"] .repitem,
     font-size: 12px;
 }
 
-.charsheet .sheet-spell-row-number,
+.charsheet .sheet-artifact-row-number,
 .charsheet .sheet-inventory-row-number {
 	text-align: center;
 	font-weight: bold;
@@ -1396,7 +1396,7 @@ div[data-groupname^="repeating_mutations"] .repitem,
 	margin-top: 3px;
 }
 
-.charsheet .sheet-spell-header { 
+.charsheet .sheet-artifact-header { 
 	background-color: #c7d1bf;
 	vertical-align: bottom;
 	border-radius: 12px;
@@ -1858,16 +1858,16 @@ div[data-groupname^="repeating_mutations"] .repitem,
 }
 
 
-/* Arcane/Divine Spellbook */
+/* Empirical/Paracausal Artifactbook */
 
-.charsheet input.sheet-ArcaneCaster,
-.charsheet input.sheet-DivineCaster {
+.charsheet input.sheet-EmpiricalUser,
+.charsheet input.sheet-ParacausalUser {
     display: inline;
     width:24px;
     height: 22px;
 }
 
-.charsheet label.sheet-subtabSpell {
+.charsheet label.sheet-subtabArtifact {
     display: inline;
     width: 40px;
     height: 22px;
@@ -1877,38 +1877,38 @@ div[data-groupname^="repeating_mutations"] .repitem,
     font-size: 1.4em;
 } 
 
-.charsheet .sheet-ArcaneCaster:checked~ div.sheet-DivineCaster,
-.charsheet .sheet-DivineCaster:checked~ div.sheet-ArcaneCaster {
+.charsheet .sheet-EmpiricalUser:checked~ div.sheet-ParacausalUser,
+.charsheet .sheet-ParacausalUser:checked~ div.sheet-EmpiricalUser {
     display: none;
 }
 
-/* Spellcasting Die switch */
+/* Artifact using Die switch */
 
 .charsheet .sheet-hidden {
     display: none;
 }
 
-.charsheet div.sheet-spellcheckSINGLE,  div.sheet-spellcheckMULTI {     
+.charsheet div.sheet-artifactcheckSINGLE,  div.sheet-artifactcheckMULTI {     
     display: none;
 }
 
-.charsheet  input.sheet-is-spellcheckMULTI:checked ~ div.sheet-spellcheckMULTI,
-            input.sheet-is-spellcheckMULTI:not(:checked )~ div.sheet-spellcheckSINGLE  {
+.charsheet  input.sheet-is-artifactcheckMULTI:checked ~ div.sheet-artifactcheckMULTI,
+            input.sheet-is-artifactcheckMULTI:not(:checked )~ div.sheet-artifactcheckSINGLE  {
     display: block;
 }
 
-/*.charsheet span.sheet-spellcheckboxTXT::before {
-                content: "Check this box if you need to use multiple dice to roll your spell check (for example: if you have the Joe Average mercurial effect).";
+/*.charsheet span.sheet-artifactcheckboxTXT::before {
+                content: "Check this box if you need to use multiple dice to roll your artifact check (for example: if you have the Joe Average mercurial effect).";
 }
 
-.charsheet span.sheet-spellcheckboxTXT {
+.charsheet span.sheet-artifactcheckboxTXT {
     text-align: center;
     height: 16px;
     font-size: 9px;
 }
 
-.charsheet  input.sheet-is-spellcheckMULTI:checked + span.sheet-spellcheckboxTXT::before {
-                content: "Uncheck this box if you need to use a single die to roll your spell check.";
+.charsheet  input.sheet-is-artifactcheckMULTI:checked + span.sheet-artifactcheckboxTXT::before {
+                content: "Uncheck this box if you need to use a single die to roll your artifact check.";
 }*/
 
 /* Zero Level Character specific sections */
